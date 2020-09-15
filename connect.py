@@ -1,0 +1,75 @@
+import os
+import time
+import sys
+import os.path
+from os import path
+from press import open_serv
+from config import configure
+
+
+
+sform = '''
+
+	Host google_colab_ssh
+		HostName something
+		User root
+		Port 0000
+'''
+
+
+def collect():
+
+    f = open("authkey.txt" , "r")
+    token = f.read()
+    scode = '''
+
+    !pip install colab_ssh --upgrade
+    from colab_ssh import launch_ssh, init_git
+    password = "colab"
+    launch_ssh("{ngrokToken}",password)
+
+    '''.format(ngrokToken = token)
+    
+
+    print("(Ctrl+Click) ", end=' ')
+    text = "this link"
+    target = "https://colab.research.google.com/#create=true"
+    print(f"\u001b]8;;{target}\u001b\\{text}\u001b]8;;\u001b\\", end = ' ')
+    print(" select the desired runtime type, and paste the output of the following code : ")
+    print("\n")
+    print(scode)
+    print("\n")
+    print("The output will be of the following format: ")
+    print(sform)
+    print("\n")
+    lines = []
+    while True:
+        line = input()
+        if line:
+            lines.append(line)
+        else:
+            break
+    text = '\n'.join(lines)
+    f = open("/home/aayush/.ssh/config", "w+")
+    f.write(text)
+    f.close()
+
+def connect():
+
+    if not path.exists("authkey.txt"):
+        print("\n")
+        configure()
+
+    collect()
+    os.system("code .")
+    time.sleep(5)
+    open_serv()
+    
+    sys.exit()
+
+
+
+
+
+
+
