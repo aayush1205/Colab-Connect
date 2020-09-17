@@ -12,8 +12,6 @@ with open('keybindings.json',"r+")  as f:
         if i.startswith('/'): 
             Flag = True
 
-print(Flag)
-count = 0 
 
 if Flag:
     with open('keybindings.json', 'r') as fin:
