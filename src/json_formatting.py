@@ -13,10 +13,7 @@ try:
         flag = True
         keys.append(json_file[i]['key'])
 except Exception as e:
-    for i in (json_file.keys()):
-        keys.append(i)
-
-print(keys)
+   pass
 def checkIfDuplicates(keys):
     ''' Check if given list contains any duplicates '''
     if len(keys) == len(set(keys)):
