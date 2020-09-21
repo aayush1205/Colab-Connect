@@ -91,14 +91,16 @@ Open the terminal in this directory then enter the following commands in the ter
 
 ## Authors:
 
-[Aradhya Tripathi](https://github.com/Aradhya-Tripathi)
-<br>
-[Astha Vijayvargiya](https://github.com/astha77-bot)
-<br>
-[Aayush Upadhyay](https://github.com/aayush1205)
+- [Aradhya Tripathi](https://github.com/Aradhya-Tripathi)
 
 
-<br>
+
+- [Astha Vijayvargiya](https://github.com/astha77-bot)
+
+
+- [Aayush Upadhyay](https://github.com/aayush1205)
+
+
 
 
 
