@@ -18,7 +18,7 @@ The repository has the installer script. This is what you need to do to get muCL
 1. Clone the repository:
 
 ```
-git clone https://github.com/aayush1205/GPU-is-a-birthright
+git clone https://github.com/aayush1205/Colab-Connect
 
 ```
 
@@ -62,9 +62,9 @@ Open the terminal in this directory then enter the following commands in the ter
 
        $ git remote -v 
        //Lists the current configured remote repository for your fork//
-       $ git remote add upstream https://github.com/aayush1205/GPU-is-a-birthright
+       $ git remote add upstream https://github.com/aayush1205/Colab-Connect
        //Specifies a new remote upstream repository that will be synced with the fork//
-       $ git remote -v
+       $ git remote -v https://github.com/aayush1205/Colab-Connect
        //Should show the newly made remote *upstream* along with your previous remote//
 
  - Syncing the fork
@@ -79,7 +79,7 @@ Open the terminal in this directory then enter the following commands in the ter
 <br>
 
 ## Authors
-See the list of all the [contributors](https://github.com/aayush1205/GPU-is-a-birthright/graphs/contributors) who participated in this project.
+See the list of all the [contributors](https://github.com/aayush1205/Colab-Connect/graphs/contributors) who participated in this project.
 
 <br>
 
