@@ -6,7 +6,11 @@ from os import path
 from press import open_serv
 from config import configure
 
-
+x = os.getcwd()
+x = x.split('/')
+root = x[1]     
+name = x[2]
+confpath = '/'+root+'/'+name+'/.ssh/config'
 
 sform = '''
 
@@ -41,7 +45,6 @@ def collect():
     print("\n")
     print("The output will be of the following format: ")
     print(sform)
-    print("\n")
     lines = []
     while True:
         line = input()
@@ -50,7 +53,9 @@ def collect():
         else:
             break
     text = '\n'.join(lines)
-    f = open("/home/aayush/.ssh/config", "w+")
+
+
+    f = open(confpath, "w+")
     f.write(text)
     f.close()
 
@@ -61,8 +66,8 @@ def connect():
         configure()
 
     collect()
-    os.system("code .")
-    time.sleep(5)
+    os.system("code")
+    time.sleep(3)
     open_serv()
     
     sys.exit()

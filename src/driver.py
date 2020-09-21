@@ -18,8 +18,13 @@ def testconnection():
     
 def drive(args):
 
-    if args.connect:
-        connect()
+    if testconnection():
+        if args.connect:
+            connect()
+        
+
+    else:
+        print("Check your network connection")
 
 
 def parse_args():
