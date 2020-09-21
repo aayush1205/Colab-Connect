@@ -5,6 +5,8 @@ import os.path
 from os import path
 from press import open_serv
 from config import configure
+from colorama import Fore
+
 
 x = os.getcwd()
 x = x.split('/')
@@ -38,13 +40,13 @@ def collect():
     print("(Ctrl+Click) ", end=' ')
     text = "this link"
     target = "https://colab.research.google.com/#create=true"
-    print(f"\u001b]8;;{target}\u001b\\{text}\u001b]8;;\u001b\\", end = ' ')
-    print(" select the desired runtime type, and paste the output of the following code : ")
+    print(Fore.BLUE + f"\u001b]8;;{target}\u001b\\{text}\u001b]8;;\u001b\\", end = ' ' + Fore.RESET)
+    print(Fore.MAGENTA + " select the desired runtime type, and paste the output of the following code : " + Fore.RESET)
     print("\n")
-    print(scode)
+    print(Fore.RED + scode + Fore.RESET)
     print("\n")
     print("The output will be of the following format: ")
-    print(sform)
+    print(Fore.RED + sform + Fore.RESET)
     lines = []
     while True:
         line = input()
@@ -53,8 +55,6 @@ def collect():
         else:
             break
     text = '\n'.join(lines)
-
-
     f = open(confpath, "w+")
     f.write(text)
     f.close()
