@@ -1,12 +1,18 @@
+'''
+File is the main driver of the project. Calls relevant methods and logics. 
+
+'''
+
 import argparse
 from config import configure
 from connect import connect
-'''
-opening a ssh tunnel for 
-futher communications
 
-'''
+
 def testconnection():
+    '''
+    Checks internet connection and prompts if not connected already.  
+    '''
+    
     import requests
     Flag = True
     try:
