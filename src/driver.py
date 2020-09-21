@@ -1,8 +1,21 @@
 import argparse
 from config import configure
 from connect import connect
+'''
+opening a ssh tunnel for 
+futher communications
 
-
+'''
+def testconnection():
+    import requests
+    Flag = True
+    try:
+        url = "https://google.com"
+        obj = requests.get(url)
+    except Exception as e:
+        Flag = False
+    return Flag
+    
 def drive(args):
 
     if args.connect:
