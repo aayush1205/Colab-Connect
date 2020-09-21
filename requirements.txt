@@ -1,1 +1,2 @@
-pip3 install ngrok 
+requests==2.22.0
+pynput==1.7.1

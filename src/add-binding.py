@@ -15,7 +15,7 @@ def make_json():
         if ("[]") in data:
             return None
         if ('[') and (']') not in data:
-            print('Modifying json')
+            # print('Modifying json')
             with open("keybindings.json","a") as fout:
                 fout.write('[]')
 
