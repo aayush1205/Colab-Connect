@@ -35,6 +35,13 @@ cd /path/to/repository
 ./env.sh
 ```
 
+4. Run the tool: 
+
+```
+ctr -c
+
+```
+
 
 ### Uninstalling
 
