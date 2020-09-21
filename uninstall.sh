@@ -7,7 +7,7 @@ sudo rm -rf /usr/local/bin/ctr
 eval "$(conda shell.bash hook)"
 conda deactivate
 conda remove --name ctr-env --all
-rm -rf ../GPU-is-a-birthright
+rm -rf ../Colab-Connect
 
 
 
