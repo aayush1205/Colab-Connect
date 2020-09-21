@@ -87,8 +87,12 @@ Open the terminal in this directory then enter the following commands in the ter
        
 <br>
 
-## Authors
-See the list of all the [contributors](https://github.com/aayush1205/Colab-Connect/graphs/contributors) who participated in this project.
+[Aradhya Tripathi](https://github.com/Aradhya-Tripathi)
+<br>
+[Astha Vijayvargiya](https://github.com/astha77-bot)
+<br>
+[Aayush Upadhyay](https://github.com/aayush1205)
+
 
 <br>
 
