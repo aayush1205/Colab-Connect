@@ -87,6 +87,8 @@ Open the terminal in this directory then enter the following commands in the ter
        
 <br>
 
+## Authors:
+
 [Aradhya Tripathi](https://github.com/Aradhya-Tripathi)
 <br>
 [Astha Vijayvargiya](https://github.com/astha77-bot)
