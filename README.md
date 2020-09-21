@@ -1,5 +1,7 @@
 # Colab-Connect
 
+[![Issues](https://img.shields.io/github/issues/aayush1205/Colab-Connect?style=plastic)]() [![PRs](https://img.shields.io/github/issues-pr/aayush1205/Colab-Connect)]() [![License](https://img.shields.io/github/license/aayush1205/Colab-Connect)]()
+
 Links your local machine to Google Colab for hassle-free GPU enabled development.  
 
 ## Getting Started
