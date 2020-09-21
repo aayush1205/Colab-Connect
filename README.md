@@ -42,6 +42,8 @@ ctr -c
 
 ```
 
+**NOTE**: Once the tunnel is openend up, it will prompt you for a password. The password is "colab". 
+
 
 ### Uninstalling
 
