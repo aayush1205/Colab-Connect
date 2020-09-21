@@ -79,7 +79,7 @@ Open the terminal in this directory then enter the following commands in the ter
 <br>
 
 ## Authors
-See the list of all the [contributors](https://github.com/aayush1205/muCLIar/contributors) who participated in this project.
+See the list of all the [contributors](https://github.com/aayush1205/GPU-is-a-birthright/graphs/contributors) who participated in this project.
 
 <br>
 
