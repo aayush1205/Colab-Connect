@@ -6,6 +6,21 @@ x = x.split('/')
 root = x[1]     
 name = x[2]
 Flag = False
+
+def make_file():
+    with open('/'+root+'/'+name+'/.config/Code/User/keybindings.json','w') as f:
+        f.close()
+
+
+def check_file():
+    if os.path.exists('/'+root+'/'+name+'/.config/Code/User/keybindings.json'):
+        return True    
+    else:
+        make_file()
+
+
+check_file()
+
 os.chdir('/'+root+'/'+name+'/.config/Code/User')
 
 
