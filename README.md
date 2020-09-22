@@ -24,7 +24,7 @@ git clone https://github.com/aayush1205/Colab-Connect
 
 ```
 
-2. Get into the muCLIar directory:
+2. Get into the project directory:
 
 ```
 cd /path/to/repository
